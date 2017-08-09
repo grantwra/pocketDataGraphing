@@ -1,0 +1,35 @@
+{
+  "SQL": {
+    "CPUTime": 1.1972770000009803, 
+    "startTime": 188.786595, 
+    "CPUByCore": {
+      "0": {
+        "count": 2685, 
+        "runTime": 0.33462699999998335
+      }, 
+      "1": {
+        "count": 3933, 
+        "runTime": 0.8626500000009969
+      }
+    }, 
+    "CPUExtentCount": 6618, 
+    "PID": 3184, 
+    "blockIOCount": 4499, 
+    "blockByType": {
+      "R": {
+        "count": 13, 
+        "waitTime": 0.15296999999995364
+      }, 
+      "WS": {
+        "count": 2701, 
+        "waitTime": 2.9412540000007255
+      }, 
+      "FWS": {
+        "count": 1785, 
+        "waitTime": 0.16881499999931293
+      }
+    }, 
+    "endTime": 193.554484, 
+    "wallTime": 4.767888999999997
+  }
+}

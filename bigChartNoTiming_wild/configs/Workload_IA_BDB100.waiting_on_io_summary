@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "scripts/analytics/findtimeblockedonio.py", line 86, in <module>
+    timestampend = float(line2.split()[3].split(':')[0])
+ValueError: could not convert string to float: [000]
