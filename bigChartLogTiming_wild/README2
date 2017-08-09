@@ -1,0 +1,26 @@
+'bigChart' System Description:
+This is a small system which will take .log files from an android phone, parse them extracting pertinent information, run this info through several python graphing scripts, displaying and saving each graph, and then produce one big chart where we can easily see, for different attributes, what database and configurations ran best and by how much better.
+
+
+Usage:
+1. Generate log files with necessary markers
+	- Markers needed:
+		-"App started"
+		-"(SQL || BDB || H2 || other DB)_START"
+		-"(SQL || BDB || H2 || other DB)_END"
+		-"app finished"
+
+2. Create/Remove/Use directories in configs/ as needed. Add the log files to their corresponding directory
+
+3. Tweak each directories 'find.sh' to include desired workloads. Follow the format 'sh findInfo.py YCSB_WorkloadA_TimingAsql.log SQL' where 'YCSB_WorkloadA_TimingAsql.log' is the log file containing info/markers pertaining to SQL and 'SQL' is simply the user defining what DB is contain to the script
+
+4. Tweak the build.sh in a similar fashion as descibed in step 3
+
+5. Run 'sh build.sh' from root
+
+**Drop in usage:
+1. Same as step 1 above (but only for SQL and BDB and H2 with the configurations described in the configs directories) 
+
+2. Place logs in their respected directories
+
+3. run 'build.sh' from root
